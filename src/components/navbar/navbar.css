@@ -1,0 +1,52 @@
+.navbar{
+    z-index: 99999;
+    background-color: #ffffff;  /*whichever you want*/
+      opacity: 0.7;           /*0.5 determines transparency value*/ 
+      filter:(opacity=50); 
+     border-bottom: solid 0.01px black;
+     height: 3.125rem;
+     width: auto;
+  }
+  .nav-item{
+    margin:0px 10px;
+  }
+  .menu_icon{
+    width: 1.75rem;
+    height: 1.313rem;
+  }
+  .logo_icon{
+    width: 6.438rem;
+    height: 1.563rem;
+    margin-left: 2rem ; 
+  }
+
+
+
+  /* tablet */
+@media only screen and (min-width:426px) and (max-width:768px) {
+
+  .navbar{
+    z-index: 99999;
+    background-color: #ffffff;  /*whichever you want*/
+      opacity: 0.7;           /*0.5 determines transparency value*/ 
+      filter:(opacity=50); 
+     border-bottom: solid 0.01px black;
+     height: 3.125rem;
+     width: 48rem;
+  }
+  .changecolor{
+    /* background-color: rgb(14, 46, 46); */
+    margin-left: 10rem;
+  }
+}
+
+/* laptop */
+@media (min-width: 900px) {
+  .logo_icon{
+    width: 6.438rem;
+    height: 1.563rem;
+    margin-left: 20rem;
+    
+  }
+}
+  

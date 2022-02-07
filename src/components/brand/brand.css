@@ -1,0 +1,97 @@
+
+.talixo_logo_black-copy-5 {
+    width: 7.375rem;
+    height: 2rem;
+    margin: 0 6.313rem 1.875rem;
+  }
+
+
+
+
+  .row-style{
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  
+/* laptop */
+  @media (min-width: 900px) {
+
+    .container-style{
+      background-color:#4a4a4a ;
+      padding-right: var(--bs-gutter-x,.75rem);
+      padding-left: var(--bs-gutter-x,.75rem);
+      margin-right: auto;
+      margin-left: auto;
+      width: 120rem;
+      max-width: 1032rem;
+    }
+    .col-style{
+      margin-top: 2rem;
+      
+    }
+  
+    .h6-style{
+     margin-top: 1rem;
+     color: #fff;
+    }
+  
+  
+    .img-style{
+      margin-left: 2.4rem;
+      width: 5.313rem;
+      height: 5.313rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  
+  
+    .social-img-style{
+     width: auto;
+     height: 1rem;
+     margin-top: 0.5rem;
+    }
+      
+  }
+  
+/* tablet */
+  @media only screen and (min-width:426px) and (max-width:768px) {
+
+    .container-style{
+      background-color:#4a4a4a ;
+      width: 100%;
+      padding-right: var(--bs-gutter-x,.75rem);
+      padding-left: var(--bs-gutter-x,.75rem);
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 778px;
+    }
+    .col-style{
+      margin-top: 2rem;
+      
+    }
+  
+    .h6-style{
+     margin-top: 1rem;
+     color: #fff;
+    }
+  
+  
+    .img-style{
+      margin-left: 2.4rem;
+      width: 5.313rem;
+      height: 5.313rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  
+  
+    .social-img-style{
+     width: auto;
+     height: 1rem;
+     margin-top: 0.5rem;
+    }
+    
+  }

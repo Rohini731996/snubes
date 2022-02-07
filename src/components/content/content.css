@@ -1,0 +1,133 @@
+
+.content-icon{
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.content{
+  margin-top:2rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px; 
+}
+
+/* laptop */
+@media (min-width: 900px) {
+
+  .main-container{
+    width: 115rem;
+    height: 14.938rem;
+    margin: 0.625rem 0;
+    padding: 1.875rem 23.75rem;
+    background-color: #fff;
+
+  }
+
+ .Sign-up-for-free {
+    width: 22.5rem;
+    height: 1.75rem;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: center;
+    color: #456;
+  }
+    
+      .Signing-up-and-setti {
+        width: 22.5rem;
+        height: 3.5rem;
+        margin: 0.313rem 2.5rem 0 0;
+        font-family: Roboto;
+        font-size: 1.125rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: center;
+        color: #456;
+      }
+    
+    }
+    
+/* tablet */
+@media only screen and (min-width:426px) and (max-width:768px) {
+ 
+  .main-container{
+  /* width: 48rem; */
+  height: 18.438rem;
+  margin: 0.625rem 0 0.625rem;
+  padding: 1.875rem;
+  background-color: #fff;
+  }
+    .Sign-up-for-free{
+        width: 13.75rem;
+        height: 1.75rem;
+        margin: 0.625rem 1.5rem 0.313rem 0;
+        font-family: Roboto;
+        font-size: 1.125rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: center;
+        color: #456;
+      }
+
+    .Signing-up-and-setti{
+        width: 13.75rem;
+        height: 5.25rem;
+        margin: 0.313rem 1.5rem 1.75rem 0;
+        font-family: Roboto;
+        font-size: 1.125rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: center;
+        color: #456;
+      }
+
+}
+
+/* mobile */
+@media  (max-width:767px){
+
+.main-container{
+ height: 26.75rem;
+ object-fit: contain;
+ background-color: #fff;
+}
+.Signing-up-and-setti {
+    width: 12.188rem;
+    height: 4.5rem;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #456;
+  }
+
+  .Sign-up-for-free {
+    width: 12.188rem;
+    height: 1.5rem;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #456;
+  }
+}
