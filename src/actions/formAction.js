@@ -1,10 +1,16 @@
-import { v4 as uuid } from "uuid";
-import { SET_CARD, REMOVE_CARD } from './actionTypes';
+import { SET_USER, SET_USER_LOCATION } from './actionTypes';
 
 export const setFormDataAction = (item) => (
     {
-        type: SET_CARD,
+        type: SET_USER,
         payload: item
+
+    });
+
+export const setUserLocationAction = (item) => (
+    {
+        type: SET_USER_LOCATION,
+        locationPayload: item
 
     });
 

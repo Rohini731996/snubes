@@ -1,2 +1,4 @@
-export const SET_CARD = 'SET_CARD';
-export const REMOVE_CARD = 'REMOVE_CARD';
+export const SET_USER = 'SET_USER';
+export const REMOVE_USER = 'REMOVE_USER';
+
+export const SET_USER_LOCATION = 'SET_USER_LOCATION';

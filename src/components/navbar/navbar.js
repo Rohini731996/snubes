@@ -6,7 +6,7 @@ import logo from '../../images/logo/snubes-logo@3x.png'
 
 
 const onclickMenu = () => {
-  console.log("menuclick")
+  // console.log("menuclick")
 }
 function Navbar() {
   return (
