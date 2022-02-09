@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./form.css";
 import { useMediaQuery } from "react-responsive";
-import { Form, Container, Button } from 'react-bootstrap';
+import { Form, Container } from 'react-bootstrap';
 
 
 
@@ -11,7 +11,7 @@ import { Form, Container, Button } from 'react-bootstrap';
 
 const FormInput = () => {
 
-    const isMobile = useMediaQuery({ query: "(max-device-width: 600px)" });
+    const isMobile = useMediaQuery({ query: "(max-device-width: 375px)" });
 
     const [company, setCompany] = useState('')
     const [name, setName] = useState('')
@@ -20,15 +20,15 @@ const FormInput = () => {
 
 
     const onSubmit = () => {
-        let details={
-            company:company,
-            name:name,
-            phone:phone,
+        let details = {
+            company: company,
+            name: name,
+            phone: phone,
             email
         }
 
 
-        console.log("details-----",details)
+        console.log("details-----", details)
         setCompany('');
         setName('')
         setPhone('')
@@ -40,7 +40,20 @@ const FormInput = () => {
     return (
         <Container className="form-container">
 
-            <Form className="form">
+            <Container className="confirm-container" >
+                <Form className="form">
+                    <span className="Thank-you-for-your" >
+                        Thank you for your request!
+                    </span><br />
+                    <p className="Youve-taken-the" >
+                        You’ ve taken the first step. Our experts will get in touch with you soon.
+                    </p>
+                    <div className="horizontal-line"> </div>
+                    
+                </Form>
+            </Container>
+
+            {/* <Form className="form">
                 <h1 className="form-h1">
                     Find inbound call centers for your company <br></br>
                 </h1>
@@ -66,7 +79,7 @@ const FormInput = () => {
                 <div className="d-grid gap-2">
                     <Button className="form-button" onClick={onSubmit}>Get informed</Button>
                 </div>
-            </Form>
+            </Form> */}
         </Container>
     )
 }

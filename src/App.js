@@ -2,7 +2,7 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import "./App.css";
 import Navbar from "./components/navbar/navbar";
-import FormInput from "./components/form/form";
+import Form from "./components/form/form";
 import Content from "./components/content/content";
 import Branding1 from './components/brand/brand'
 import tablet_why_snubes from './images/content/tablet_why_snubes.png'
@@ -38,7 +38,7 @@ function App() {
     return (
         <div className="App">
             <Navbar />
-            <FormInput />
+            <Form />
             {/* <Confirmation/> */}
             <Content />
             <WhySnubes

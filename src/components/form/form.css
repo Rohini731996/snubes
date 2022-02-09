@@ -40,8 +40,6 @@
 }
 
 
-
-
 /* lg-desktop */
 @media (min-width: 2500px) {
     .form-container{
@@ -78,53 +76,91 @@
         flex-direction: row;
         padding: 0.5rem;
     }
+
+    .Thank-you-for-your{
+        margin: 2rem 2rem;
+        font-size: x-large;
+    }
+    .Youve-taken-the{
+        margin: 0rem -1rem;
+        width: 24rem;
+        text-align: center;
+    }
+
+    .horizontal-line{
+        width: 19.125rem;
+        height: 0.063rem;
+        margin: 1rem 2.5rem;
+        border-radius: 8px;
+        background-color: #abc;
+    }
     
 }    
 
 
 /* laptop */
 @media (min-width: 900px) and (max-width: 2000px) {
-.form-container{
-    padding: 1rem;
-    background-image: linear-gradient(to bottom, rgba(68, 85, 102, 0), rgba(68, 85, 102, 0.75)), url('../../bgImg.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position-x: right;
-    max-width: 1000rem;
-    height: auto;
-    background-color: #09e;
-    width: 120rem;
-}
+    .form-container{
+        padding: 1rem;
+        background-image: linear-gradient(to bottom, rgba(68, 85, 102, 0), rgba(68, 85, 102, 0.75)), url('../../bgImg.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position-x: right;
+        max-width: 1000rem;
+        height: auto;
+        background-color: #09e;
+        width: 120rem;
+    }
 
- .form{
-    margin-top: 0.875;
-    background-color: white;
-    border: solid 0.1rem black;
-    width: fit-content;
-    padding-inline: 1rem;
-    padding-bottom: inherit
-}
-.form-label{
-    margin-bottom: 0.1rem;
-    margin-top: 0.7rem;
-    border: #171818;
-    color: #445566;
-    margin-right: 1rem;
-    min-width: 109px;
-}
-
-
-.form-group{
-    display: flex;
-    flex-direction: row;
-    padding: 0.5rem;
-}
-
-}
+    .form{
+        margin-top: 0.875;
+        background-color: white;
+        border: solid 0.1rem black;
+        width: fit-content;
+        padding-inline: 1rem;
+        padding-bottom: inherit
+    }
+        .form-label{
+            margin-bottom: 0.1rem;
+            margin-top: 0.7rem;
+            border: #171818;
+            color: #445566;
+            margin-right: 1rem;
+            min-width: 109px;
+        }
 
 
+        .form-group{
+            display: flex;
+            flex-direction: row;
+            padding: 0.5rem;
+        }
+
+        .Thank-you-for-your{
+            margin: 2rem 2rem;
+            font-size: x-large;
+        }
+        .Youve-taken-the{
+            margin: 0rem -1rem;
+            width: 24rem;
+            text-align: center;
+        }
+
+        .horizontal-line{
+            width: 19.125rem;
+            height: 0.063rem;
+            margin: 1rem 2.5rem;
+            border-radius: 8px;
+            background-color: #abc;
+        }
+       
+    }
+
+
+
+/* tablet */
 @media only screen and (min-width:426px) and (max-width:768px) {
 
     .form-label{
@@ -143,5 +179,104 @@
         padding: 0.5rem;
     }
     
+    .Thank-you-for-your{
+        margin: 3rem 11rem;
+        font-size: x-large;
+    }
+    .Youve-taken-the{
+        margin: 0rem 0rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .horizontal-line{
+        width: 27.125rem;
+        height: 0.063rem;
+        margin: 1rem 7.5rem;
+        border-radius: 8px;
+        background-color: #abc;
+    }
 }
+
+/* l-mobile */
+
+@media only screen and (max-width:425px) {
+
+    .form-label{
+        margin-bottom: 0.1rem;
+        margin-top: 0.7rem;
+        border: #171818;
+        color: #445566;
+        margin-right: 1rem;
+        min-width: 109px
+    }
+    
+    
+    .form-group{
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+    }
+    
+    .Thank-you-for-your{
+        margin: 2rem 2rem;
+        font-size: x-large;
+    }
+    .Youve-taken-the{
+        margin: 0rem -1rem;
+        width: 24rem;
+        text-align: center;
+    }
+
+    .horizontal-line{
+        width: 24.125rem;
+        height: 0.063rem;
+        margin: 2rem -0.5rem;
+        border-radius: 8px;
+        background-color: #abc;
+    }
+    
+}
+
+/* medium-mobile */
+@media only screen and (max-width:375px) {
+    .Thank-you-for-your{
+        margin: 1rem 2rem;
+        font-size: larger;
+    }
+    .Youve-taken-the{
+        margin: 0rem -1rem;
+        width: 22rem;
+        text-align: center;
+    }
+    .horizontal-line{
+        width: 21.125rem;
+        height: 0.063rem;
+        margin: 2rem -0.5rem;
+        border-radius: 8px;
+        background-color: #abc;
+    }
+}
+
+
+/* small-mobile */
+@media only screen and (max-width:320px) {
+    .Thank-you-for-your{
+        margin: 1rem 1rem;
+        font-size: large;
+    }
+    .Youve-taken-the{
+        margin: 0rem -1rem;
+        width: 19rem;
+        text-align: center;
+    }
+    .horizontal-line{
+        width: 18.125rem;
+        height: 0.063rem;
+        margin: 2rem -0.5rem;
+        border-radius: 8px;
+        background-color: #abc;
+    }
+}
+
 
