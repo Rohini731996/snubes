@@ -3,8 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import "./App.css";
 import Navbar from "./components/navbar/navbar";
 import Form from "./components/form/form";
-import Content from "./components/content/content";
-import Branding1 from './components/brand/brand'
+import MoreOptions from "./components/content/content";
 import tablet_why_snubes from './images/content/tablet_why_snubes.png'
 import desktop_why_snubes from './images/content/desktop_why_snubes.png'
 import mobile_why_snubes from './images/content/mobile_why_snubes.png'
@@ -12,7 +11,6 @@ import mobile_why_snubes from './images/content/mobile_why_snubes.png'
 import styled from "styled-components";
 import Brand2 from "./components/brand/brand2";
 import Copyright from "./components/Copyright/copyright";
-import Confirmation from "./components/confirmation/confirmation";
 
 
 const WhySnubes = styled.div`
@@ -39,8 +37,7 @@ function App() {
         <div className="App">
             <Navbar />
             <Form />
-            {/* <Confirmation/> */}
-            <Content />
+            <MoreOptions/>
             <WhySnubes
                 desktopimg={desktop_why_snubes}
                 tabletimg={tablet_why_snubes}
