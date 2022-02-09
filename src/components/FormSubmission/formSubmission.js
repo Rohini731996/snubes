@@ -8,8 +8,8 @@ import { Form, Container, Button, Row, Col } from 'react-bootstrap';
 
 const _row = (key, value,index) => {
     return <Row key={index} className="row-style">
-        <Col xs={2} >{key}</Col>
-        <Col md={5} className="value">{value}</Col>
+        <Col xs={3} className="key">{key}</Col>
+        <Col xs={6} className="value">{value}</Col>
     </Row>
 }
 

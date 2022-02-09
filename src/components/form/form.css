@@ -56,7 +56,6 @@
         background-position-x: right;
         max-width: 1000rem;
         height: auto;
-        background-color: rgb(212, 22, 22);
     }
     .form{
         margin-top: 0.875;
@@ -114,7 +113,6 @@
         background-position-x: right;
         max-width: 1000rem;
         height: auto;
-        background-color: #09e;
         width: 120rem;
     }
 

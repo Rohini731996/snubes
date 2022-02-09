@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import card from './card';
+import userData from './formReducer';
 
 export default combineReducers({
-    card,
+    userData,
 });

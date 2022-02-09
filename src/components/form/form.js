@@ -5,7 +5,8 @@ import "./form.css";
 import { useMediaQuery } from "react-responsive";
 import { Form, Container, Button } from 'react-bootstrap';
 import FormSubmission from "../FormSubmission/formSubmission";
-
+import { useSelector, useDispatch } from 'react-redux'
+import { setFormDataAction } from "../../actions/formAction";
 
 const email_reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 // const phone_reg = /^(\+\d{1,2})[4-9][0-9]{9}$/;
@@ -24,6 +25,9 @@ let error = [
 
 const FormInput = () => {
 
+    const userdata = useSelector((state) => state.userData);
+    const dispatch = useDispatch()
+
     const [company, setCompany] = useState('')
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
@@ -40,17 +44,16 @@ const FormInput = () => {
             Email: email
         }
 
-
         if (phone_reg.test(phone) &&
             comp_req.test(company) &&
             email_reg.test(email) &&
             name_req.test(name)) {
             setSubmit(true)
+            dispatch(setFormDataAction(details));
+            setData(details)  
         } else {
             alert(error[0] + "\n \u2219" + error[1] + "\n \u2219" + error[2] + "\n \u2219" + error[3] + "\n \u2219" + error[4])
-
         }
-        setData(details)
         setCompany('');
         setName('')
         setPhone('')

@@ -1,19 +1,20 @@
 import { SET_CARD, REMOVE_CARD } from '../actions/actionTypes';
 
-const initialState = [
-    {
-        text: 'Deck of Cards',
-    },
-];
+const initialState = {
+    Company: '',
+    Name: '',
+    Phone: '',
+    Email: ''
+};
 
 export default function (state = initialState, action) {
     const { type, payload } = action;
 
     switch (type) {
         case SET_CARD:
-            return [...state, payload];
-        case REMOVE_CARD:
-            return state.filter((card) => card.id !== payload);
+            return {
+                payload
+            };
         default:
             return state;
     }
