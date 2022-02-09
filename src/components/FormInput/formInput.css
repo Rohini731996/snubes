@@ -21,6 +21,10 @@
     font-weight: bold;
 }
 
+.button-style{
+    margin: 1rem 0rem;
+}
+
 .form-button{
     margin-top: 0.5rem;
     margin-left: 1.5rem;
@@ -44,13 +48,7 @@
 }
 
 
-.form-control-sm{
-    min-height: calc(1.5em + 0.5rem + 2px);
-    padding: 0.25rem 0.5rem;
-    font-size: .875rem;
-    border-radius: 0.2rem;
-    width: 4rem;
-}
+
 
 /* lg-desktop */
 @media (min-width: 2500px) {
@@ -79,6 +77,13 @@
         border: #171818;
         color: #445566;
         margin-right: 1rem;
+    }
+    .form-control-sm{
+        min-height: calc(1.5em + 0.5rem + 2px);
+        padding: 0.25rem 0.5rem;
+        font-size: .875rem;
+        border-radius: 0.2rem;
+        width: 4rem;
     }
     
     
@@ -165,6 +170,13 @@
             border-radius: 8px;
             background-color: #abc;
         }
+        .form-control-sm{
+            min-height: calc(1.5em + 0.5rem + 2px);
+            padding: 0.25rem 0.5rem;
+            font-size: .875rem;
+            border-radius: 0.2rem;
+            width: 4rem;
+        }
        
     }
 
@@ -206,6 +218,13 @@
         border-radius: 8px;
         background-color: #abc;
     }
+    .form-control-sm{
+        min-height: calc(1.5em + 0.5rem + 2px);
+        padding: 0.25rem 0.5rem;
+        font-size: .875rem;
+        border-radius: 0.2rem;
+        width: 4rem;
+    }
 }
 
 /* l-mobile */
@@ -241,9 +260,16 @@
     .horizontal-line{
         width: 24.125rem;
         height: 0.063rem;
-        margin: 2rem -0.5rem;
+        margin: 1rem -0.5rem;
         border-radius: 8px;
         background-color: #abc;
+    }
+    .form-control-sm{
+        min-height: calc(1.5em + 0.5rem + 2px);
+        padding: 0.25rem 0.5rem;
+        font-size: .875rem;
+        border-radius: 0.2rem;
+        width: 4rem;
     }
     
 }
@@ -262,9 +288,16 @@
     .horizontal-line{
         width: 21.125rem;
         height: 0.063rem;
-        margin: 2rem -0.5rem;
+        margin: 1rem -0.5rem;
         border-radius: 8px;
         background-color: #abc;
+    }
+    .form-control-sm{
+        min-height: calc(1.5em + 0.5rem + 2px);
+        padding: 0.25rem 0.5rem;
+        font-size: .875rem;
+        border-radius: 0.2rem;
+        width: 4rem;
     }
 }
 
@@ -283,9 +316,16 @@
     .horizontal-line{
         width: 18.125rem;
         height: 0.063rem;
-        margin: 2rem -0.5rem;
+        margin: 1rem -0.5rem;
         border-radius: 8px;
         background-color: #abc;
+    }
+    .form-control-sm{
+        min-height: calc(1.5em + 0.5rem + 2px);
+        padding: 0.25rem 0.5rem;
+        font-size: .875rem;
+        border-radius: 0.2rem;
+        width: 3rem;
     }
 }
 

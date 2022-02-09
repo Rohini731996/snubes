@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./formInput.css";
 import { useMediaQuery } from "react-responsive";
 import { Form, Container, Button } from 'react-bootstrap';
-import FormSubmission from "../FormSubmission/formSubmission";
 import { useSelector, useDispatch } from 'react-redux'
 import { setFormDataAction } from "../../actions/formAction";
 
@@ -63,35 +62,36 @@ const FormInput = () => {
 
     const isMobile = useMediaQuery({ query: "(max-device-width: 600px)" });
     return (
-        <Form className="form">
-            <h1 className="form-h1">
-                Find inbound call centers for your company <br></br>
-            </h1>
-            {!isMobile ? <h5 className="form-h5">
-                Use our AI and Big Data driven call center sourcing solution
-            </h5> : <></>}
-            <Form.Group className="form-group">
-                <Form.Label className="form-label">Company </Form.Label>
-                <Form.Control required type="text" placeholder="Company" value={company} onChange={e => setCompany(e.target.value)} />
-            </Form.Group>
-            <Form.Group className="form-group">
-                <Form.Label className="form-label">Name</Form.Label>
-                <Form.Control required type="text" placeholder="Full name" value={name} onChange={e => setName(e.target.value)} />
-            </Form.Group>
-            <Form.Group controlId="form.Textarea" className="form-group">
-                <Form.Label className="form-label">Phone</Form.Label>
-                <Form.Control className="form-control-sm" type="text" placeholder={userLocationISD} disabled />
-                <Form.Control required type="text" placeholder={"9990000000"} value={phone} onChange={e => setPhone(e.target.value)} />
-            </Form.Group>
-            <Form.Group controlId="form.Email" className="form-group">
-                <Form.Label className="form-label">Email address</Form.Label>
-                <Form.Control required type="email" placeholder="name@mail.com" value={email} onChange={e => setEmail(e.target.value)} />
-            </Form.Group>
-            <div className="d-grid gap-2">
-                <Button className="form-button" onClick={onSubmit}>Get informed</Button>
-            </div>
-        </Form>
-
+        <Container>
+            <Form className="form">
+                <h1 className="form-h1">
+                    Find inbound call centers for your company <br></br>
+                </h1>
+                {!isMobile ? <h5 className="form-h5">
+                    Use our AI and Big Data driven call center sourcing solution
+                </h5> : <></>}
+                <Form.Group className="form-group">
+                    <Form.Label className="form-label">Company </Form.Label>
+                    <Form.Control required type="text" placeholder="Company" value={company} onChange={e => setCompany(e.target.value)} />
+                </Form.Group>
+                <Form.Group className="form-group">
+                    <Form.Label className="form-label">Name</Form.Label>
+                    <Form.Control required type="text" placeholder="Full name" value={name} onChange={e => setName(e.target.value)} />
+                </Form.Group>
+                <Form.Group controlId="form.Textarea" className="form-group">
+                    <Form.Label className="form-label">Phone</Form.Label>
+                    <Form.Control className="form-control-sm" type="text" placeholder={userLocationISD} disabled />
+                    <Form.Control required type="text" placeholder={"9990000000"} value={phone} onChange={e => setPhone(e.target.value)} />
+                </Form.Group>
+                <Form.Group controlId="form.Email" className="form-group">
+                    <Form.Label className="form-label">Email address</Form.Label>
+                    <Form.Control required type="email" placeholder="name@mail.com" value={email} onChange={e => setEmail(e.target.value)} />
+                </Form.Group>
+                <div className="d-grid gap-4 button-style">
+                    <Button className="form-button" onClick={onSubmit}>Get informed</Button>
+                </div>
+            </Form>
+        </Container>
     );
 }
 
